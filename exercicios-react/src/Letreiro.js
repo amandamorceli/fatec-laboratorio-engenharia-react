@@ -1,8 +1,5 @@
-import React from "react";
-import "./App.css";
-
 let index = 0;
-const textoLetreiro = "Venha estudar na Fatec!!!";
+const textoLetreiro = "Conheça a Fatec!!!";
 
 function AtualizarLetreiro() {
   index++;
@@ -21,7 +18,7 @@ setInterval(AtualizarLetreiro, 200);
 function Letreiro() {
   return (
     <div>
-      <h1 id="letreiro"></h1>
+      <h2 id="letreiro"></h2>
     </div>
   );
 }

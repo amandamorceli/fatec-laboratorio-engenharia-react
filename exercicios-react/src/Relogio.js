@@ -1,22 +1,22 @@
-function Relogio() {
+function AtualizarRelogio() {
   let hr = new Date().getHours();
   let min = new Date().getMinutes();
   let seg = new Date().getSeconds();
 
   const elementoRoot = document.getElementById("relogio");
   if (elementoRoot) {
-    elementoRoot.innerHTML = `${hr}:${min}:${seg}`;
+    elementoRoot.innerHTML = `Agora são: ${hr}:${min}:${seg}`;
   }
 }
 
-setInterval(Relogio, 1000);
+setInterval(AtualizarRelogio, 1000);
 
-function MostrarRelogio() {
+function Relogio() {
   return (
     <div>
-      <h1 id="relogio"></h1>
+      <h2 id="relogio"></h2>
     </div>
   );
 }
 
-export default MostrarRelogio;
+export default Relogio;
