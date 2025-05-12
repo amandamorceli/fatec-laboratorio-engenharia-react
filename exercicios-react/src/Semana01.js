@@ -1,5 +1,5 @@
-import Relogio from "./Relogio";
-import Letreiro from "./Letreiro";
+import Relogio from "./components/Relogio";
+import Letreiro from "./components/Letreiro";
 
 function Semana01() {
   return (
