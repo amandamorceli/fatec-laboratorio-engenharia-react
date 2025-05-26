@@ -1,10 +1,10 @@
-import MeuBotao from "./components/MeuBotao";
+import Contador from "./components/Contador";
 
 function Semana02() {
   return (
     <div>
       <h2>Semana 2</h2>
-      <MeuBotao />
+      <Contador />
     </div>
   );
 }
