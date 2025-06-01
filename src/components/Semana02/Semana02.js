@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
+import BotaoVoltar from "../BotaoVoltarMenu";
 import Contador from "./Contador";
 
 function Semana02() {
   return (
     <div>
-      <h1 title="Clique para voltar">
-        <Link to="/">Semana 2</Link>
-      </h1>
+      <BotaoVoltar />
       <Contador />
     </div>
   );

@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom";
-import Galeria from "./Galeria.js";
-import Avatar from "./Avatar.js";
-import ToDoList from "./ToDoList.js";
-import Profile from "./Profile.js";
-import TeaSet from "./Cha.js";
-import PackingList from "./PackingList.js";
-import PrepareMode from "./Recipe.js";
-import List from "./List.js";
+import BotaoVoltar from "../BotaoVoltarMenu";
+import Galeria from "./Galeria";
+import Avatar from "./Avatar";
+import ToDoList from "./ToDoList";
+import Profile from "./Profile";
+import TeaSet from "./Cha";
+import PackingList from "./PackingList";
+import PrepareMode from "./Recipe";
+import List from "./List";
 function Semana03() {
   return (
-    <div>
-      <h1 title="Clique para voltar">
-        <Link to="/">Semana 3</Link>
-      </h1>
+    <div className="m-4">
+      <BotaoVoltar />
       <Galeria />
       <Avatar />
-      <ToDoList />
       <Profile />
+      <ToDoList />
       <PackingList />
       <List />
       <PrepareMode />

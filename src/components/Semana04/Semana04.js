@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
+import BotaoVoltar from "../BotaoVoltarMenu";
 
 function Semana04() {
   return (
     <div>
-      <h1 title="Clique para voltar">
-        <Link to="/">Semana 4</Link>
-      </h1>
+      <BotaoVoltar />
     </div>
   );
 }

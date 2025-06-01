@@ -1,20 +1,8 @@
 import { useState } from "react";
-
-function Soma({ onClick }) {
-  return (
-    <button onClick={onClick} className="border p-1">
-      <i className="fas fa-plus"></i>
-    </button>
-  );
-}
-
-function Subtrai({ onClick }) {
-  return (
-    <button onClick={onClick} className="border p-1">
-      <i className="fas fa-minus"></i>
-    </button>
-  );
-}
+import BotaoSoma from "./BotaoSomar";
+import BotaoSubtrai from "./BotaoSubtrair";
+import avatarM from "./avatarM.png";
+import avatarH from "./avatarH.png";
 
 export default function Contador() {
   const [homem, setHomem] = useState(0);
@@ -39,22 +27,24 @@ export default function Contador() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center text-center">
-      <h1 className="text-4xl font-bold mb-6">Contador</h1>
-      <p className="text-2xl font-semibold mb-10">TOTAL {total}</p>
+    <div className="flex flex-col items-center justify-center text-center gap-y-8">
+      <h1 className="text-4xl font-bold">Contador</h1>
+      <p className="text-2xl font-semibold">TOTAL {total}</p>
       <div className="flex gap-10">
-        <div>
+        <div className="flex flex-col gap-1">
+          <img src={avatarH} alt="Avatar Homem" className="w-[100px]" />
           HOMEM {homem}
           <div>
-            <Soma onClick={SomarH} />
-            <Subtrai onClick={SubtrairH} />
+            <BotaoSoma onClick={SomarH} />
+            <BotaoSubtrai onClick={SubtrairH} />
           </div>
         </div>
         <div>
+          <img src={avatarM} alt="Avatar Mulher" className="w-[100px]" />
           MULHER {mulher}
           <div>
-            <Soma onClick={SomarM} />
-            <Subtrai onClick={SubtrairM} />
+            <BotaoSoma onClick={SomarM} />
+            <BotaoSubtrai onClick={SubtrairM} />
           </div>
         </div>
       </div>

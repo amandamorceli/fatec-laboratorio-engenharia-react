@@ -3,28 +3,24 @@ import { getImageUrl } from "../utils";
 function Avatar({ person, size }) {
   return (
     <img
-      className="avatar"
+      className="rounded-2xl"
       src={getImageUrl(person)}
       alt={person.name}
-      width={size}
-      height={size}
+      title={person.name}
+      width={200}
+      height={200}
     />
   );
 }
 
-export default function Profile() {
+export default function Perfil() {
   return (
     <>
-      <h3>Profile</h3>
-      <Avatar
-        size={100}
-        person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
-      />
-      <Avatar
-        size={100}
-        person={{ name: "Aklilu Lemma", imageId: "OKS67lh" }}
-      />
-      <Avatar size={100} person={{ name: "Lin Lanying", imageId: "1bX5QH6" }} />
+      <h3>Perfil</h3>
+      <div className="flex flex-col gap-y-3 ">
+        <Avatar person={{ name: "Hedy Lamarr", imageId: "hedy-lamarr" }} />
+        <Avatar person={{ name: "Mary Jackson", imageId: "mary-jackson" }} />
+      </div>
     </>
   );
 }
