@@ -19,6 +19,12 @@ const Home = () => {
         <li className="px-6 py-3 rounded-2xl shadow bg-indigo-400 hover:bg-indigo-300 hover:text-black text-white">
           <Link to="/Semana04">Atividade 4</Link>
         </li>
+        <li className="px-6 py-3 rounded-2xl shadow bg-indigo-400 hover:bg-indigo-300 hover:text-black text-white">
+          <Link to="/Semana05">Atividade 5</Link>
+        </li>
+        <li className="px-6 py-3 rounded-2xl shadow bg-indigo-400 hover:bg-indigo-300 hover:text-black text-white">
+          <Link to="/Semana06">Atividade 6</Link>
+        </li>
       </ul>
     </div>
   );
