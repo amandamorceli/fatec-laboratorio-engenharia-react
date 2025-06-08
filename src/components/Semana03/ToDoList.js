@@ -12,7 +12,7 @@ export default function TodoList() {
       style={pessoa.theme}
       className="flex flex-col gap-y-3 items-center my-4"
     >
-      <h1 className="text-xl">Lista de feitos por {pessoa.name}</h1>
+      <h1 className="text-xl font-bold">Lista de feitos por {pessoa.name}</h1>
       <div className="flex gap-x-3">
         <img
           className="w-[300px] h-[200px] m-4 rounded-2xl"

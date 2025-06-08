@@ -13,7 +13,7 @@ function Recipe({ drinkers }) {
 export default function PrepareMode() {
   return (
     <section>
-      <h2>Spiced Chai Recipe</h2>
+      <h2 className="text-xl font-bold">Spiced Chai Recipe</h2>
       <h3>For two</h3>
       <Recipe drinkers={2} />
       <h3>For a gathering</h3>

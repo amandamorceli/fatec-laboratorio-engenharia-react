@@ -26,10 +26,21 @@ export default function Contador() {
     }
   }
 
+  function Resetar() {
+    setHomem(0);
+    setMulher(0);
+  }
+
   return (
     <div className="flex flex-col items-center justify-center text-center gap-y-8">
       <h1 className="text-4xl font-bold">Contador</h1>
       <p className="text-2xl font-semibold">TOTAL {total}</p>
+      <button
+        onClick={Resetar}
+        className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+      >
+        Resetar
+      </button>
       <div className="flex gap-10">
         <div className="flex flex-col gap-1">
           <img src={avatarH} alt="Avatar Homem" className="w-[100px]" />

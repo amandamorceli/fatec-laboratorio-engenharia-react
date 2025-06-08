@@ -5,7 +5,7 @@ export default function Avatar() {
   const titulo = 'Fei-Fei Li, "madrinha da IA"';
   return (
     <>
-      <h3>Avatar</h3>
+      <h3 className="text-xl font-bold">Avatar</h3>
       <img
         src={avatar}
         alt={description}

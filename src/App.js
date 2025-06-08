@@ -1,25 +1,24 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { useState } from "react";
+import Chat from "./components/Semana05/Chat";
+import ContactList from "./components/Semana05/ContactList";
 
-function App() {
+export default function Messenger() {
+  const [to, setTo] = useState(contacts[0]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ContactList
+        contacts={contacts}
+        selectedContact={to}
+        onSelect={(contact) => setTo(contact)}
+      />
+      <Chat key={to.email} contact={to} />
     </div>
   );
 }
 
-export default App;
+const contacts = [
+  { name: "Taylor", email: "taylor@email.com" },
+  { name: "Alice", email: "alice@email.com" },
+  { name: "Bob", email: "bob@email.com" },
+];

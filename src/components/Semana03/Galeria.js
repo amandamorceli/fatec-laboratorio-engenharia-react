@@ -1,7 +1,7 @@
 export default function Galeria() {
   return (
     <section className="flex flex-col items-center gap-y-3">
-      <h1 className="text-xl">Galeria</h1>
+      <h1 className="text-xl font-bold">Galeria</h1>
       <h2>A primeira programadora da história</h2>
       <div className="flex gap-3">
         <Perfil />

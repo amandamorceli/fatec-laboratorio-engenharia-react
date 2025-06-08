@@ -16,10 +16,20 @@ function Avatar({ person, size }) {
 export default function Perfil() {
   return (
     <>
-      <h3>Perfil</h3>
+      <h3 className="text-xl font-bold">Perfil</h3>
       <div className="flex flex-col gap-y-3 ">
-        <Avatar person={{ name: "Hedy Lamarr", imageId: "hedy-lamarr" }} />
-        <Avatar person={{ name: "Mary Jackson", imageId: "mary-jackson" }} />
+        <Avatar
+          size={100}
+          person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
+        />
+        <Avatar
+          size={100}
+          person={{ name: "Aklilu Lemma", imageId: "OKS67lh" }}
+        />
+        <Avatar
+          size={100}
+          person={{ name: "Lin Lanying", imageId: "1bX5QH6" }}
+        />
       </div>
     </>
   );

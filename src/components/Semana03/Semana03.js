@@ -9,16 +9,18 @@ import PrepareMode from "./Recipe";
 import List from "./List";
 function Semana03() {
   return (
-    <div className="m-4">
+    <div>
       <BotaoVoltar />
-      <Galeria />
-      <Avatar />
-      <Profile />
-      <ToDoList />
-      <PackingList />
-      <List />
-      <PrepareMode />
-      <TeaSet />
+      <div className="flex flex-col items-center gap-y-3">
+        <Galeria />
+        <Avatar />
+        <Profile />
+        <ToDoList />
+        <PackingList />
+        <List />
+        <PrepareMode />
+        <TeaSet />
+      </div>
     </div>
   );
 }

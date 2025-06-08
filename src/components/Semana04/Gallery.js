@@ -16,7 +16,7 @@ export default function Gallery() {
   let sculpture = sculptureList[index];
   return (
     <div className="flex flex-col mt-1 ">
-      <h1 className="text-xl">Gallery</h1>
+      <h1 className="text-xl font-bold">Gallery</h1>
       <div>
         <button
           className="border-2 rounded-xl border-gray-400 px-2 py-1"

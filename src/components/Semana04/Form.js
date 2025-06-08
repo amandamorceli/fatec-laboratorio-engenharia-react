@@ -12,9 +12,9 @@ export default function Form() {
   }
 
   return (
-    <div className="flex mx-4">
+    <div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-y-3">
-        <h1 className="text-xl">Form</h1>
+        <h1 className="text-xl font-bold">Form</h1>
         <label>
           To:{" "}
           <select value={to} onChange={(e) => setTo(e.target.value)}>
